@@ -19,7 +19,7 @@ public class CompanyController {
     //保存企业
     @RequestMapping(value = "",method = RequestMethod.POST)
     public Result save(@RequestBody Company company){
-        companyService.add (company);
+        companyService.add(company);
         return new Result(ResultCode.SUCCESS);
     }
     //根据Id更新企业
